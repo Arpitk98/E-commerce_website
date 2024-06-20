@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/93c5e829c9.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png" >
+
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="logo"> </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a  href="blog.html">Blog</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a  href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active"  href="cart.html"> <i class="fa-solid fa-bag-shopping"></i> </a></li>
+                <a href="#" id="close"> <i class="fa-solid fa-xmark"></i> </a>
+            </ul>
+
+        </div>
+
+       <div id="mobile">
+           <a href="cart.html"> <i class="fa-solid fa-bag-shopping" ></i> </a>
+           <i id="bar" class="fa-solid fa-bars"></i> 
+       </div>
+         
+    </section>
+
+    <section id="hero3" class="section-p1" >
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MESSAGE, We love to hear from you!</p>
+    </section>  
+
+    <section id="cart" class="section-p1">
+        <table  >
+               <thead>
+                <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                
+                </tr>
+               </thead>
+               <tbody>
+                   <tr id="first"  class="hide">
+                    <td id="firstBtn" ><i class="fa-solid fa-trash"></i></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut Shirt</td>
+                    <td id="first-price">$ 85.00</td>
+                    <td><input id="num1" type="text" min="1" value="1"></td>
+                   <tr id="sec" >
+                    <td id="secBtn"><i class="fa-solid fa-trash"></i></td>
+                    <td><img src="img/products/n7.jpg" alt=""></td>
+                    <td>Cartoon Astronaut Shirt</td>
+                    <td id="sec-price">$ 90.00</td> 
+                    <td><input id="num2" type="text" min="1" value="1"></td>
+                   <tr id="third" class="hide">
+                    <td id="thirdBtn" ><i class="fa-solid fa-trash"></i></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut Shirt</td>
+                    <td id="third-price">$ 98</td>
+                    <td><input id="num3" type="text" min="1" value="1"></td>
+                   
+                   </tr>
+               </tbody>
+        </table>
+    </section>
+ 
+    <button id="total-btn" >Total Bill</button>
+
+     <section id="total" class="section-p1">
+            <div class="coupon">
+                <h2>Apply Coupon</h2>
+                <input type="text" name="" id="coupon" placeholder="Enter Your Coupon">
+                <button id="btn">Apply</button> 
+                 <h2 class="hide" id="invalid" >Invalid Coupon</h2>
+                 <h2 class="hide" id="enter-coupon" style="color: rgb(224, 61, 61); font-size: 17px;">Please Enter Coupon First </h2>
+              
+                </div>
+          
+
+            <!-- remove cart-total add this on java script and  hide also remove there  -->
+            <div class="hide" id="insert">
+          
+        </div>
+     </section>  
+
+    <footer class="section-p1">
+        <div class="col col1">
+            <img src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p> <strong>Address:</strong> 142, Hardoi-Kanpur Road, Mallawan, IN </p>
+            <p> <strong>Phone:</strong> +91-8081399512 </p>
+            <p> <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+
+        <div class="col install">
+            <h4> Install App</h4>
+            <p>From App store or Google </p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy 2024, Tech2etc - HTML CSS E-commerce Template</p>
+        </div>
+
+    </footer>
+
+    
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html

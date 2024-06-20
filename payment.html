@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="style.css">
+     
+
+</head>
+
+<body>
+
+
+    <section id="hero3" >
+        <h2>#Payment</h2>
+        <p>Shopping on Cart!</p>
+    </section>  
+
+   <br>  <br> <br>
+
+    <section id="payment">
+        <h3>Provide Billing Information </h3>
+    <div class="info">
+        <div class="left">
+            <h4>Billing Address</h4>
+
+       <div class="name">  
+          <div class="first">
+            <label for="First">First name</label> <br>
+            <input type="text" id="first">  </div>
+        <div class="last">
+            <label for="First">Last name</label> <br>
+            <input type="text" id="sec"> </div>
+        </div>   
+
+        
+            <br>
+            <label> User-name</label> <br>
+            <input type="text">
+            <br> <br>
+            <label for="">E-mail</label> <br>
+            <input type="email">
+            <br> <br>
+            <label for="">Adress</label> <br>
+            <input type="text"><br>
+ <br>
+   <div class="add">
+    <div>
+
+        <label for="">City</label> <br>
+        <input type="text">
+    </div>
+    <div>
+        
+        <label for="">State</label> <br>
+        <input type="text">
+    </div>
+    <div> 
+
+        <label for="">Zip Code</label> <br>
+        <input type="number" min="111111" max="999999" maxlength="6">
+    </div>
+            
+   </div>
+
+            <div class="checkbox">
+         <span>   <input  type="checkbox" name="" id="bill1">
+             Shipping Address is same as Billing Address </span>  <br> 
+            <input type="checkbox" name="" id="bill2"> Save this Information for next Order
+        </div>
+ </div>
+
+
+
+
+        <div class="right">
+             
+        <h4>Select a Payment Option</h4>
+
+         <img src="img/pay/pay.png" alt="">
+
+         <select name="payments" id="payment">
+            
+           <option value="Phone-pe">Select</option>
+           <option value="Phone-pe">Phone-pe</option>
+           <option value="G-pay">G-pay</option>
+           <option value="paytm">paytm</option>
+           <option value="Netbanking">Netbanking</option>
+           <option value="debit Cards">Cards</option>
+
+         </select>
+             
+         <button onclick="window.location.href='payment.com' ">Pay Now</button>
+   <br>
+     <span>or</span>
+          <br>
+          <div class="radio">
+         <input type="radio" name="" id=""> Pay on Delivery
+        </div>
+
+       <button onclick="window.location.reload()"> Continue</button> 
+        </div>
+
+    </div>
+    </section> 
+    <br> <br> <br>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
